@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Variable Variables | WP Developers Club</title>
+
+    <style>
+        form {
+            margin: 40px 0 0 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Let's look at access arrays with variable variables</h1>
+    <form method="post" action="/form2.php">
+
+        <p>
+            <label for="lesson_number">Select the lesson number:</label><br/>
+            <select name="lesson_number">
+                <option value="0">Lesson 1</option>
+                <option value="1">Lesson 2</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="filterby">Filter Lessons By:</label><br/>
+            <input type="radio" name="filterby" value="php"> PHP<br/>
+            <input type="radio" name="filterby" value="html"> HTML<br/>
+            <input type="radio" name="filterby" value="css"> CSS<br/>
+            <input type="radio" name="filterby" value="js"> JavaScript
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+</html>
